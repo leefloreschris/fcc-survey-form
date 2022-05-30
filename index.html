@@ -11,45 +11,47 @@
   <h1 id="title">Bear Den Survey</h1>
   <p id="description">thanks for the time and feedback</p>
   <form action="" id="survey-form">
-    <label id="name-label">Name: <input name="yourName" type="text" id="name" required placeholder="Enter your name"></label>
-    <label id="email-label">Email: <input name="yourEmail" type="email" id="email" required placeholder="Enter your Email"></label>
-    <label id="number-label">Age: <input name="yourAge" type="number" id="number" required min="13" max="120" placeholder="Age"></label>
-    <label id="role"> Which opiton best describes your role? 
-      <select name="" id="dropdown">
-        <option value="choose">(Choose One)</option>
-        <option value="student">Student</option>
-        <option value="employed">Employed</option>
-      </select>
-    </label>
-    <label>Would you recommend Bear Den to a friend? 
-      <label>
-        <input value="yes" name="user-recommend" type="radio">
-        Yes 
+    <div><label id="name-label">Name: <input name="yourName" type="text" id="name" required placeholder="Enter your name"></label></div>
+    <div><label id="email-label">Email: <input name="yourEmail" type="email" id="email" required placeholder="Enter your Email"></label></div>
+    <div><label id="number-label">Age: <input name="yourAge" type="number" id="number" required min="13" max="120" placeholder="Age"></label></div>
+    <div>
+      <label id="role"> Which opiton best describes your role? 
+        <select name="" id="dropdown">
+          <option value="choose">(Choose One)</option>
+          <option value="student">Student</option>
+          <option value="employed">Employed</option>
+        </select>
       </label>
-      <label>
-        <input value="maybe" name="user-recommend" type="radio">
-       Maybe 
+    </div>
+    <div>
+      <label>Would you recommend Bear Den to a friend? 
+        <label>
+          <input value="yes" name="user-recommend" type="radio">
+          Yes 
+        </label>
+        <label>
+          <input value="maybe" name="user-recommend" type="radio">
+         Maybe 
+        </label>
+        <label>
+          <input value="not-sure" name="user-recommend" type="radio">
+          Not Sure 
+        </label>
       </label>
-      <label>
-        <input value="not-sure" name="user-recommend" type="radio">
-        Not Sure 
+    </div>
+    <div>
+      <label><p>What would you like to see improved? </p></label>
+      <label><input type="checkbox" value="display">Display</label>
+      <label><input type="checkbox" value="color-scheme">Color Scheme</label>
+      <label><input type="checkbox" value="font">Font</label>
+      <label><input type="checkbox" value="font-size">Font Size</label>
+      <label><input type="checkbox" value="more-content">More Content!</label>
+    </div>
+      <label> 
+        <p>Any suggestions? Lets us know below.</p> 
+        <textarea name="additional-comments" id="" cols="30" rows="10">Type here...</textarea>
       </label>
-    </label>
-    <label>What would you like to see improved? 
-      <input type="checkbox" value="display">
-      Display
-      <input type="checkbox" value="color-scheme">
-      Color Scheme
-      <input type="checkbox" value="font">
-      Font
-      <input type="checkbox" value="font-size">
-      Font Size
-      <input type="checkbox" value="more-articles">
-      More Articles!
-    </label>
-    <label> Any suggestions? Lets us know below. 
-      <textarea name="additional-comments" id="" cols="30" rows="10">Type here...</textarea>
-    </label>
+    </div>
     <label><input id="submit" type="submit" value="Submit"></label>
   </form>
 </body>
